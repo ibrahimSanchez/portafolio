@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Botones */
+.btn-primary {
+  @apply bg-button-primary hover:bg-button-primary-hover text-text-base px-6 py-3 rounded font-semibold;
+}
+
+.btn-secondary {
+  @apply bg-button-secondary hover:bg-button-secondary-hover text-text-base px-6 py-3 rounded font-semibold;
+}
+
+@layer components {
+  .card {
+    @apply p-6 border rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out;
+  }
+
+  .card:hover {
+    @apply translate-y-[-5px];
+  }
+}
+
+
+
+.sectionPage {
+  @apply min-h-screen px-8 md:px-16
+}
+
+
+
+
+.gradient-text {
+  background: linear-gradient(to right, #9333EA, #10B981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.bg-section-gradient {
+  background: linear-gradient(to left, transparent, #1F2937) #111827
+}
+
+/* 2a313d */
+
+/* Scrollbar */
+/* ::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--secondary);
+} */
+
+
+
+
+
+/* Clase para aplicar la animación */
+.bounce-updown {
+  animation: bounceUpDown 2s ease-in-out infinite;
+  /* Duración de la animación y el ciclo infinito */
+}
+
+
+
+
+
+
+/* .animateMove {
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.animateMove:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+ */
+
+@keyframes bounceUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Posición inicial y final */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Subir 20px en el medio */
+  }
+}
