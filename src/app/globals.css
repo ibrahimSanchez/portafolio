@@ -34,14 +34,19 @@
 
 
 .gradient-text {
-  background: linear-gradient(to right, #9333EA, #10B981);
+  background: linear-gradient(to right, #fc7622, #FFD846);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 
-.bg-section-gradient {
-  background: linear-gradient(to left, transparent, #1F2937) #111827
+.bg-section-gradient-top {
+  background: linear-gradient(to top, transparent, #171616) #22211e
+}
+
+.bg-section-gradient-bottom {
+  background: linear-gradient(to bottom, transparent, #171616) #22211e
 }
 
 /* 2a313d */
@@ -103,4 +108,52 @@
     transform: translateY(-20px);
     /* Subir 20px en el medio */
   }
+}
+
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease forwards;
+  animation-delay: 1.3s;
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #171616;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, transparent, #fc7622) transparent;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, transparent, #23A455) transparent;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(to bottom, transparent, #23A455) transparent;
 }

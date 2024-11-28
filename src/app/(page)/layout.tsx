@@ -1,4 +1,4 @@
-import { ExpandableSideMenu } from "@/components";
+import { ExpandableSideMenu, Footer } from "@/components";
 
 
 export default function RootLayout({
@@ -17,6 +17,8 @@ export default function RootLayout({
         {children}
 
       </main>
+
+      <Footer />
     </div>
 
 

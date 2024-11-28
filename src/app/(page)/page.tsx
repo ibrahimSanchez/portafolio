@@ -1,4 +1,10 @@
-import { WelcomeSection, WhatWeDoSection } from "@/components";
+import {
+  ContactUsSection,
+  CreatingProcessSection,
+  WelcomeSection,
+  WhatWeDoSection,
+  WhyChooseMeSection
+} from "@/components";
 
 
 export default function Home() {
@@ -8,9 +14,10 @@ export default function Home() {
     <>
 
       <WelcomeSection />
-
-
       <WhatWeDoSection />
+      <WhyChooseMeSection />
+      <CreatingProcessSection />
+      <ContactUsSection />
 
     </>
   );

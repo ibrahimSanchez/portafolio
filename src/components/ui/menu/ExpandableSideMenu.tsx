@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from "react";
 import { IconButton, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import {
@@ -11,6 +12,7 @@ import {
   Info as InfoIcon
 } from "@mui/icons-material";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 
@@ -33,6 +35,8 @@ export const ExpandableSideMenu = () => {
     { text: "About Us", icon: <InfoIcon />, link: "/about-us" },
   ];
 
+  const pathname = usePathname();
+
   return (
     <div>
       {isExpanded && (
@@ -43,9 +47,8 @@ export const ExpandableSideMenu = () => {
       )}
 
       <div
-        className={`fixed top-0 left-0 h-screen bg-background-primary transition-all duration-300 z-50 ${
-          isExpanded ? "w-64" : "w-16"
-        }`}
+        className={`fixed top-0 left-0 h-screen bg-background-primary transition-all duration-300 z-50 ${isExpanded ? "w-64" : "w-16"
+          }`}
       >
         <div className="flex justify-end p-2 mb-4 bg-card-base">
           <IconButton
@@ -61,9 +64,13 @@ export const ExpandableSideMenu = () => {
             <Link
               key={index}
               href={item.link}
-              onClick={isExpanded ? toggleMenu : () => {}}
+              onClick={isExpanded ? toggleMenu : () => { }}
             >
-              <ListItem className="hover:bg-button-secondary-hover text-text-base mb-6 cursor-pointer">
+              <ListItem
+                className={`hover:bg-button-secondary-hover text-text-base mb-6 cursor-pointer 
+                  ${pathname === item.link && 'bg-button-secondary'}
+                  `}
+              >
                 <ListItemIcon className="text-text-base">{item.icon}</ListItemIcon>
                 {isExpanded && <ListItemText primary={item.text} />}
               </ListItem>
