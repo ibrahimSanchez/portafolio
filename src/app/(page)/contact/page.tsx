@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components";
 
 
 
@@ -18,21 +19,20 @@ export default function Contact() {
 
                 </div>
 
-                <div className="h-[60vh] bg-heading-base text-background-primary p-16 flex justify-center">
+                <div className=" bg-heading-base text-background-primary p-8 lg:p-16 flex justify-center">
 
-                    <div className="w-[60vw]">
+                    <div className="lg:w-[60vw]">
                         <p className="text-xl font-bold mb-2">
                             Hello 🖐🏻
                         </p>
                         <p className="text-xl mb-4">
-                            Don&apos;t hesitate to tell me how I can help you. Email me at <span className="text-detail-primary">
+                            Don&apos;t hesitate to tell me how I can help you. Email me at <span className="text-detail-primary cursor-pointer">
                                 sanchezibrahim296@gmail.com
                             </span> or use the form below.
                         </p>
 
-                        <div>
-                            aqui va el formulario
-                        </div>
+                        <ContactForm />
+
                     </div>
 
                 </div>

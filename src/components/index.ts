@@ -13,3 +13,5 @@ export * from './grid/ProjectSection';
 export * from './ui/card/SimpleCard';
 export * from './ui/card/CreatingProcessCard';
 export * from './ui/card/ProjectCard';
+
+export * from './ui/form/ContactForm';
