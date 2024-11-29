@@ -9,9 +9,11 @@ export * from './grid/WhyChooseMeSection';
 export * from './grid/CreatingProcessSection';
 export * from './grid/ContactUsSection';
 export * from './grid/ProjectSection';
+export * from './grid/TechnologiesSection';
 
 export * from './ui/card/SimpleCard';
 export * from './ui/card/CreatingProcessCard';
 export * from './ui/card/ProjectCard';
 
 export * from './ui/form/ContactForm';
+

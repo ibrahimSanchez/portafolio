@@ -41,6 +41,7 @@ const config: Config = {
       boxShadow: {
         'lateral-right': '4px 0 10px rgba(255, 255, 255, 0.3)', // Sombra derecha
         'lateral-left': '-4px 0 10px rgba(255, 255, 255, 0.3)', // Sombra izquierda
+        'bottom': '0 0 10px #fc7622',
       },
 
     },

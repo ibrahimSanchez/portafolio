@@ -32,7 +32,7 @@ export const ExpandableSideMenu = () => {
     { text: "Projects", icon: <WorkIcon />, link: "/projects" },
     { text: "Contact", icon: <ContactIcon />, link: "/contact" },
     { text: "Platforms", icon: <DevicesIcon />, link: "/platforms" },
-    { text: "About Us", icon: <InfoIcon />, link: "/about-us" },
+    { text: "About Me", icon: <InfoIcon />, link: "/about-me" },
   ];
 
   const pathname = usePathname();
@@ -52,7 +52,7 @@ export const ExpandableSideMenu = () => {
       >
         <div className="flex justify-end p-2 mb-4 bg-card-base">
           <IconButton
-            className="text-text-base bg-button-secondary hover:bg-button-secondary-hover"
+            className="text-text-base bg-button-primary hover:bg-button-primary-hover"
             onClick={toggleMenu}
           >
             {isExpanded ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -67,8 +67,8 @@ export const ExpandableSideMenu = () => {
               onClick={isExpanded ? toggleMenu : () => { }}
             >
               <ListItem
-                className={`hover:bg-button-secondary-hover text-text-base mb-6 cursor-pointer 
-                  ${pathname === item.link && 'bg-button-secondary'}
+                className={`hover:bg-button-primary-hover text-text-base mb-6 cursor-pointer 
+                  ${pathname === item.link && 'bg-button-primary'}
                   `}
               >
                 <ListItemIcon className="text-text-base">{item.icon}</ListItemIcon>

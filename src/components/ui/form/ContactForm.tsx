@@ -28,7 +28,6 @@ export const ContactForm: React.FC = () => {
 
     const onSubmit: SubmitHandler<FormValues> = async (formData) => {
         try {
-            // Cambiar el estado del botón mientras se envía el mensaje
             setButtonState({
                 loading: true,
                 message: 'Sending...',
@@ -48,22 +47,20 @@ export const ContactForm: React.FC = () => {
 
             await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID);
 
-            // Cambiar el estado del botón a éxito
             setButtonState({
                 loading: false,
                 message: 'Message sent successfully!',
-                color: '#23A455', // Color de éxito
+                color: '#23A455', 
                 colorHover: '#1a8845'
             });
 
             reset();
 
-            // Revertir el estado del botón después de 3 segundos
             setTimeout(() => {
                 setButtonState({
                     loading: false,
                     message: 'Send Message',
-                    color: '#fc7622', 
+                    color: '#fc7622',
                     colorHover: '#d66219'
                 });
             }, 3000);
@@ -71,21 +68,19 @@ export const ContactForm: React.FC = () => {
         } catch (error) {
             console.error('Failed to send the message:', error);
 
-            // Cambiar el estado del botón a error
             setButtonState({
                 loading: false,
                 message: 'An error occurred. Please try again.',
-                color: '#dc3545', // Color de error
+                color: '#dc3545', 
                 colorHover: '#fc3545'
 
             });
 
-            // Revertir el estado del botón después de 3 segundos
             setTimeout(() => {
                 setButtonState({
                     loading: false,
                     message: 'Send Message',
-                    color: '#fc7622', // Color original
+                    color: '#fc7622', 
                     colorHover: '#d66219'
                 });
             }, 3000);
@@ -99,7 +94,6 @@ export const ContactForm: React.FC = () => {
                 className="bg-section-gradient-top p-8 rounded-lg shadow-xl space-y-6"
                 style={{ backgroundColor: '#252525' }}
             >
-                {/* Campo de Nombre */}
                 <TextField
                     label="Your Name"
                     variant="outlined"
@@ -123,7 +117,6 @@ export const ContactForm: React.FC = () => {
                     }}
                 />
 
-                {/* Campo de Email */}
                 <TextField
                     label="Your Email"
                     variant="outlined"
@@ -154,7 +147,6 @@ export const ContactForm: React.FC = () => {
                     }}
                 />
 
-                {/* Campo de Mensaje */}
                 <TextField
                     label="Message"
                     variant="outlined"
@@ -180,7 +172,6 @@ export const ContactForm: React.FC = () => {
                     }}
                 />
 
-                {/* Botón de Enviar */}
                 <Button
                     type="submit"
                     variant="contained"
