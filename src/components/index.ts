@@ -17,3 +17,4 @@ export * from './ui/card/ProjectCard';
 
 export * from './ui/form/ContactForm';
 
+export * from './ui/carousel/ProjectCarousel';

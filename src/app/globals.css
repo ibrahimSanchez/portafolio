@@ -14,14 +14,12 @@
   @apply bg-button-secondary hover:bg-button-secondary-hover text-text-base px-6 py-3 rounded font-semibold;
 }
 
-@layer components {
-  .card {
-    @apply p-6 border rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out;
-  }
+.card {
+  @apply p-6 border rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out;
+}
 
-  .card:hover {
-    @apply translate-y-[-5px];
-  }
+.card:hover {
+  @apply translate-y-[-5px];
 }
 
 
@@ -48,29 +46,6 @@
 .bg-section-gradient-bottom {
   background: linear-gradient(to bottom, transparent, #171616) #22211e
 }
-
-/* 2a313d */
-
-/* Scrollbar */
-/* ::-webkit-scrollbar {
-  width: 6px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  border-radius: 10px;
-  border: 1px solid #000;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--secondary);
-}
-::-webkit-scrollbar-thumb:active {
-  background-color: var(--secondary);
-} */
-
 
 
 

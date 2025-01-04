@@ -8,7 +8,11 @@ export const WhatWeDoSection = () => {
     return (
         <section className="min-h-screen px-8 md:px-16 py-16 bg-background-tertiary w-full bg-section-gradient-bottom">
             <div>
-                <h2 className='mb-4 text-2xl'>WHAT WE DO</h2>
+                <div className='flex'>
+                    <p className="bg-detail-secondary text-detail-primary px-10 py-2 rounded-full font-bold mb-6">
+                        WHAT WE DO
+                    </p>
+                </div>
                 <h2 className="text-5xl md:text-4xl font-semibold text-heading-base">
                     A Web Design & Development Company That Builds & Develops Successful Websites.
                 </h2>

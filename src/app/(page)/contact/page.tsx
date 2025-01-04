@@ -2,13 +2,13 @@ import { ContactForm } from "@/components";
 
 
 
-
+ 
 export default function Contact() {
     return (
         <section className="min-h-screen bg-section-gradient-top">
             <div className="opacity-0 animate-fade-in">
 
-                <div className="h-[40vh] bg-section-gradient-top flex flex-col items-center justify-center">
+                <div className="h-[40vh] bg-section-gradient-top flex flex-col items-center justify-center px-8 md:px-16 py-8 lg:py-24">
 
                     <p className="bg-detail-secondary text-detail-primary px-10 py-2 rounded-full font-bold mb-6">
                         CONTACT US

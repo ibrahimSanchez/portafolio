@@ -37,6 +37,6 @@ export const CreatingProcessCard = ({ index, itemsList = [], title, className = 
                 }
             </List>
 
-        </Card>
+        </Card> 
     )
 }

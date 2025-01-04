@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
                         </li>
                         <li>
                             <a
-                                href="mailto:example@domain.com"
+                                href="mailto:sanchezibrahim296@gmail.com"
                                 className="hover:text-blue-500 transition-colors"
                             >
                                 <MdEmail className="inline-block mr-2" />

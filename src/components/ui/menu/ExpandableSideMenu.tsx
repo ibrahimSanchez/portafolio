@@ -8,7 +8,7 @@ import {
   Home as HomeIcon,
   Work as WorkIcon,
   ContactMail as ContactIcon,
-  Devices as DevicesIcon,
+  // Devices as DevicesIcon,
   Info as InfoIcon
 } from "@mui/icons-material";
 import Link from "next/link";
@@ -31,7 +31,7 @@ export const ExpandableSideMenu = () => {
     { text: "Home", icon: <HomeIcon />, link: "/" },
     { text: "Projects", icon: <WorkIcon />, link: "/projects" },
     { text: "Contact", icon: <ContactIcon />, link: "/contact" },
-    { text: "Platforms", icon: <DevicesIcon />, link: "/platforms" },
+    // { text: "Platforms", icon: <DevicesIcon />, link: "/platforms" },
     { text: "About Me", icon: <InfoIcon />, link: "/about-me" },
   ];
 

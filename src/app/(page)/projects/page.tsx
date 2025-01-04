@@ -22,7 +22,11 @@ export default function Project() {
             </section>
 
 
+
+
+
             <ProjectSection className="opacity-0 animate-fade-in" />
+
 
 
         </div>

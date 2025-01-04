@@ -12,8 +12,12 @@ export const CreatingProcessSection = () => {
 
     <div className='min-h-screen bg-heading-base text-center text-background-primary px-8 md:px-16 py-16 w-full'>
 
-
-      <h2 className="mb-8 text-2xl">CO-CREATING PROCESS</h2>
+      <div className="flex justify-center">
+        <p className="cursor-default bg-detail-secondary text-detail-primary px-10 py-2 rounded-full font-bold mb-6">
+          CO-CREATING PROCESS
+        </p>
+      </div>
+      {/* <h2 className="mb-8 text-2xl">CO-CREATING PROCESS</h2> */}
       <h2 className="text-5xl md:text-5xl font-semibold mb-20">
         Our Proven Web Design & Development Formula
       </h2>
