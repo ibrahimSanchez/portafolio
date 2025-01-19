@@ -28,11 +28,26 @@ export const ExpandableSideMenu = () => {
   };
 
   const menuItems = [
-    { text: "Home", icon: <HomeIcon />, link: "/" },
-    { text: "Projects", icon: <WorkIcon />, link: "/projects" },
-    { text: "Contact", icon: <ContactIcon />, link: "/contact" },
-    // { text: "Platforms", icon: <DevicesIcon />, link: "/platforms" },
-    { text: "About Me", icon: <InfoIcon />, link: "/about-me" },
+    {
+      text: "Home",
+      icon: <HomeIcon className="text-text-base" />,
+      link: "/"
+    },
+    {
+      text: "Projects",
+      icon: <WorkIcon className="text-text-base" />,
+      link: "/projects"
+    },
+    {
+      text: "Contact",
+      icon: <ContactIcon className="text-text-base" />,
+      link: "/contact"
+    },
+    {
+      text: "About Me",
+      icon: <InfoIcon className="text-text-base" />,
+      link: "/about-me"
+    },
   ];
 
   const pathname = usePathname();
@@ -71,7 +86,7 @@ export const ExpandableSideMenu = () => {
                   ${pathname === item.link && 'bg-button-primary'}
                   `}
               >
-                <ListItemIcon className="text-text-base">{item.icon}</ListItemIcon>
+                <ListItemIcon>{item.icon}</ListItemIcon>
                 {isExpanded && <ListItemText primary={item.text} />}
               </ListItem>
             </Link>

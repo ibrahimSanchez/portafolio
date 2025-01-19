@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
                             <FaLinkedin size={24} />
                         </a>
                         <a
-                            href="https://github.com/yourusername"
+                            href="https://github.com/ibrahimSanchez"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-gray-400 transition-colors"
